@@ -1,0 +1,77 @@
+:root {
+  /* white */
+  --color-white-primary: #FFFFFF;
+  --color-white-primary-50: #FFFFFF80;
+  --color-white-primary-20: #FFFFFF33;
+  /* gray */
+  --color-gray-primary: #1A1A1A;
+  --color-gray-primary-80: #1A1A1ACC;
+  --color-gray-primary-20: #1A1A1A33;
+  --color-gray-primary-10: #1A1A1A1A;
+  /* red */
+  --color-red-primary: #FF3C3C;
+  --color-red-primary-20: #FF3C3C33;
+
+  /* background */
+  --color-background-white-default: #FCFCFC;
+  --color-background-red-favorited: linear-gradient(140deg, #FF3C3C 0,#992424 100.00%);
+
+  /* backgroound class pokemon */
+  --color-pokemon-background-fire: linear-gradient(90deg, #FF8904 0,#FB2C36 50.00%,#F6339A 100.00%);
+  --color-pokemon-background-water: linear-gradient(90deg, #51A2FF 0,#00B8DB 50.00%,#00BBA7 100.00%);
+  --color-pokemon-background-grass: linear-gradient(90deg, #05DF72 0,#00BC7D 50.00%,#009689 100.00%);
+  --color-pokemon-background-electric: linear-gradient(90deg, #FFDF20 0,#F0B100 50.00%,#FF6900 100.00%);
+  --color-pokemon-background-psychic: linear-gradient(90deg, #FB64B6 0,#AD46FF 50.00%,#4F39F6 100.00%);
+  --color-pokemon-background-ice: linear-gradient(90deg, #53EAFD 0,#51A2FF 50.00%,#615FFF 100.00%);
+  --color-pokemon-background-dragon: linear-gradient(90deg, #615FFF 0,#9810FA 50.00%,#E60076 100.00%);
+  --color-pokemon-background-ghost: linear-gradient(90deg, #9810FA 0,#432DD7 50.00%,#5D0EC0 100.00%);
+  --color-pokemon-background-fairy: linear-gradient(90deg, #FDA5D5 0,#FB64B6 50.00%,#FF2056 100.00%);
+  --color-pokemon-background-normal: linear-gradient(90deg, #99A1AF 0,#6A7282 50.00%,#4A5565 100.00%);
+  --color-pokemon-background-fighting: linear-gradient(90deg, #E7000B 0,#CA3500 50.00%,#973C00 100.00%);
+  --color-pokemon-background-flying: linear-gradient(90deg, #A3B3FF 0,#51A2FF 50.00%,#00B8DB 100.00%);
+  --color-pokemon-background-poison: linear-gradient(90deg, #AD46FF 0,#C800DE 50.00%,#E60076 100.00%);
+  --color-pokemon-background-ground: linear-gradient(90deg, #D08700 0,#BB4D00 50.00%,#9F2D00 100.00%);
+  --color-pokemon-background-rock: linear-gradient(90deg, #A65F00 0,#57534D 50.00%,#364153 100.00%);
+  --color-pokemon-background-bug: linear-gradient(90deg, #7CCF00 0,#00A63E 50.00%,#007A55 100.00%);
+  --color-pokemon-background-steel: linear-gradient(90deg, #99A1AF 0,#62748E 50.00%,#52525C 100.00%);
+
+  /* shadow */
+  --shadow-card: 0px 2px 8px 1px rgba(26,26,26,0);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "Baloo Da 2", sans-serif;
+  line-height: 110%;
+  color: var(--gray-primary);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.h6 {
+  font-size: 1.5rem;
+}
+
+.body-larger {
+  font-size: 1rem;
+}
+.body-default {
+  font-size: .875rem;
+}
+.body-small {
+  font-size: .75rem;
+}
+.body-label-default {
+  font-size: .625rem;
+}
+.body-label-small {
+  font-size: .5rem;
+}
