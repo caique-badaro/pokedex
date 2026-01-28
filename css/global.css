@@ -63,6 +63,14 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: bold;
 }
 
+.h2 {
+  font-size: 3.5rem;
+}
+
+.h5 {
+  font-size: 1.75rem;
+}
+
 .h6 {
   font-size: 1.5rem;
 }
@@ -149,6 +157,22 @@ h1, h2, h3, h4, h5, h6, p, a {
   height: 4px;
   border-radius: 999px;
   background: var(--color-pokemon-background-grass);
+}
+
+/* dimensões */
+.size-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: .25rem;
+  padding: .5rem 1rem;
+  background: var(--color-gray-primary-10);
+  border-radius: var(--radius-small);
+}
+.size-info .h6,
+.size-info .body-default {
+  font-weight: 200;
 }
 
 /* mobile */
