@@ -91,7 +91,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 2rem 2.5rem 0 2.5rem;
+  padding: 2rem 2.5rem;
   background: var(--color-pokemon-background-grass);
   color: var(--color-white-primary);
 }
@@ -104,9 +104,41 @@
 .bottom-sheet--card-pokemon .card--image-content .card-header .action-btn {
   display: flex;
   gap: 1rem;
+  z-index: 1;
 }
 .bottom-sheet--card-pokemon .card--image-content .row-content {
-  padding: 0 2.5rem 2rem 2.5rem;
+  display: flex;
+  align-items: flex-end;
+  align-self: stretch;
+}
+.bottom-sheet--card-pokemon .card--image-content .row-content .name-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  flex: 1 0 0;
+}
+.bottom-sheet--card-pokemon .card--image-content .row-content .name-type .pokemon-name,
+.bottom-sheet--card-pokemon .card--image-content .row-content .name-type .pokemon-class,
+.bottom-sheet--card-pokemon .card--image-content .row-content .name-type .pokemon-size {
+  display: flex;
+  gap: .5rem;
+}
+.bottom-sheet--card-pokemon .card--image-content .row-content .name-type .pokemon-size {
+  margin-top: 1rem;
+}
+.bottom-sheet--card-pokemon .card--image-content .row-content .image-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: self-end;
+  height: 320px;
+  width: 50%;
+  margin-bottom: -6rem;
+}
+.bottom-sheet--card-pokemon .card--image-content .row-content .image-pokemon img {
+  width: 100%;
 }
 
 /* parei aqui */
