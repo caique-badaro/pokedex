@@ -140,8 +140,30 @@
 .bottom-sheet--card-pokemon .card--image-content .row-content .image-pokemon img {
   width: 100%;
 }
-
-/* parei aqui */
+.bottom-sheet--card-pokemon .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2.5rem;
+  padding: 2rem 2.5rem;
+  color: var(--color-gray-primary-80);
+}
+.bottom-sheet--card-pokemon .content .skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.bottom-sheet--card-pokemon .content-box {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.bottom-sheet--card-pokemon .pokemon-skills {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
 
 
 @media (min-width: 200px) and (max-width: 768px) {
