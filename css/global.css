@@ -15,6 +15,7 @@
   /* background */
   --color-background-white-default: #FCFCFC;
   --color-background-red-favorited: linear-gradient(140deg, #FF3C3C 0,#992424 100.00%);
+  --color-background-content-box: linear-gradient(140deg, #EFF6FF 0,#FAF5FF 100.00%);
 
   /* backgroound class pokemon */
   --color-pokemon-background-fire: linear-gradient(90deg, #FF8904 0,#FB2C36 50.00%,#F6339A 100.00%);
@@ -61,6 +62,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .text-bold {
   font-weight: bold;
+}
+.text-regular {
+  font-weight: 100;
 }
 
 .h2 {
@@ -167,12 +171,62 @@ h1, h2, h3, h4, h5, h6, p, a {
   align-content: flex-start;
   gap: .25rem;
   padding: .5rem 1rem;
-  background: var(--color-gray-primary-10);
+  background: var(--color-gray-primary-10); 
   border-radius: var(--radius-small);
 }
 .size-info .h6,
 .size-info .body-default {
   font-weight: 200;
+}
+
+/* habilidades especiais */
+.special-skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem;
+  border-radius: var(--radius-small);
+  background: var(--color-background-content-box);
+  color: var(--color-gray-primary-80);
+}
+.special-skill img {
+  width: 1.5rem;
+}
+.special-skill .scale {
+  display: flex;
+  gap: .5rem;
+}
+.special-skill .force-scale,
+.special-skill .force-scale-disabled {
+  width: .75rem;
+  height: .75rem;
+  background: var(--color-pokemon-background-grass);
+  border-radius: 999px;
+}
+.special-skill .force-scale-disabled {
+  opacity: .1;
+}
+
+/* barra de habilidades popup */
+.skill-modal {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 100%;
+}
+.skill-modal .info {
+  align-items: center;
+  flex: 1;
+  display: flex;
+  gap: .5rem;
+}
+.skill-modal .info img {
+  width: 20px;
+  opacity: .8;
+}
+.skill-modal .info p:nth-child(2) {
+  width: 100%;
 }
 
 /* mobile */
