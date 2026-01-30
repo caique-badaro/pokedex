@@ -189,6 +189,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   border-radius: var(--radius-small);
   background: var(--color-background-content-box);
   color: var(--color-gray-primary-80);
+  min-height: 32px;
 }
 .special-skill img {
   width: 1.5rem;
@@ -220,6 +221,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   flex: 1;
   display: flex;
   gap: .5rem;
+  color: var(--color-gray-primary-80);
 }
 .skill-modal .info img {
   width: 20px;
@@ -227,6 +229,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 .skill-modal .info p:nth-child(2) {
   width: 100%;
+}
+.adjust-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* mobile */
@@ -251,5 +258,22 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
   .pokemon-power .power .body-larger {
     font-size: .875rem;
+  }
+
+  /* skill modal */
+  .skill-modal {
+    flex: 1;
+    min-width: 40%;
+  }
+
+  /* habilidades especiais */
+  .special-skill {
+    padding: .5rem .75rem;
+    border-radius: var(--radius-small);
+    background: var(--color-background-content-box);
+    color: var(--color-gray-primary-80);
+  }
+  .special-skill .h6 {
+    font-size: 1rem;
   }
 }
